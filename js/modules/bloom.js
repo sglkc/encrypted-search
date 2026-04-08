@@ -48,10 +48,10 @@ export function createBloomFilter(items, salt) {
  * @returns {boolean}
  */
 export function bloomContains(filter, mask) {
-  return (filter[0] & mask[0]) === mask[0] &&
-    (filter[1] & mask[1]) === mask[1] &&
-    (filter[2] & mask[2]) === mask[2] &&
-    (filter[3] & mask[3]) === mask[3];
+  return (((filter[0] & mask[0]) >>> 0) === (mask[0] >>> 0)) &&
+    (((filter[1] & mask[1]) >>> 0) === (mask[1] >>> 0)) &&
+    (((filter[2] & mask[2]) >>> 0) === (mask[2] >>> 0)) &&
+    (((filter[3] & mask[3]) >>> 0) === (mask[3] >>> 0));
 }
 
 /**
