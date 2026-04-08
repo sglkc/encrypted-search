@@ -47,8 +47,6 @@ export function renderDbTable(db, showPlaintext, highlightResult) {
   tbody.innerHTML = html;
   document.getElementById('dbSubtitle').textContent =
     `Showing 200 of ${db.length.toLocaleString()} records`;
-  document.getElementById('recordCountBadge').textContent =
-    `${db.length.toLocaleString()} records`;
 }
 
 /**
