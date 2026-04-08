@@ -268,7 +268,7 @@ button,
 
 .main {
   display: grid;
-  grid-template-columns: 420px 1fr;
+  grid-template-columns: 450px 1fr;
   flex: 1;
   overflow: hidden;
   min-height: 0
@@ -951,6 +951,10 @@ button,
   }
 
   .panel-left {
+    display: none
+  }
+
+  .badge {
     display: none
   }
 }
